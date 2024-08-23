@@ -18,6 +18,11 @@ const router = createRouter({
       path: '/reactive',
       name: 'reactive',
       component: () => import('../views/Reactive-demo.vue')
+    },
+    {
+      path: '/v-bind-css',
+      name: 'v-bind-css',
+      component: () => import('../views/V-bind-css.vue')
     }
   ]
 })

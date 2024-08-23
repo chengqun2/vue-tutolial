@@ -13,6 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/ref">ref</RouterLink>
         <RouterLink to="/reactive">reactive</RouterLink>
+        <RouterLink to="/v-bind-css">v-bind-css</RouterLink>
       </nav>
     </div>
   </header>
