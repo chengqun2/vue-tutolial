@@ -1,0 +1,25 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView
+    },
+    {
+      path: '/ref',
+      name: 'ref',
+      component: () => import('../views/Ref-demo.vue')
+    },
+    {
+      path: '/reactive',
+      name: 'reactive',
+      component: () => import('../views/Reactive-demo.vue')
+    }
+  ]
+})
+
+export default router
