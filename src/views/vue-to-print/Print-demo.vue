@@ -5,7 +5,7 @@ import { reactive, ref } from 'vue'
 import ComponentToPrint from './ComponentToPrint.vue'
 
 const componentRef = ref()
-const state = reactive({ text: 'old boring text' })
+const state = reactive({ text: '=== Parent text ===' })
 
 const { handlePrint } = useVueToPrint({
   content: componentRef,
@@ -19,7 +19,7 @@ const { handlePrint } = useVueToPrint({
 <template>
   <ion-button @click="handlePrint">Print</ion-button>
   <div ref="componentRef">
-    <component-to-print :text="state.text" />
+    <ComponentToPrint :text="state.text" />
   </div>
 </template>
 
