@@ -23,6 +23,11 @@ const router = createRouter({
       path: '/v-bind-css',
       name: 'v-bind-css',
       component: () => import('../views/V-bind-css.vue')
+    },
+    {
+      path: '/print',
+      name: 'print',
+      component: () => import('../views/vue-to-print/print-demo.vue')
     }
   ]
 })

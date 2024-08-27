@@ -14,6 +14,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/ref">ref</RouterLink>
         <RouterLink to="/reactive">reactive</RouterLink>
         <RouterLink to="/v-bind-css">v-bind-css</RouterLink>
+        <RouterLink to="/print">print</RouterLink>
       </nav>
     </div>
   </header>
