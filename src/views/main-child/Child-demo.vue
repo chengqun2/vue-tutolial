@@ -5,7 +5,6 @@
   </slot>
   <div class="content">This is child component: {{ msg }}</div>
   <div class="button">
-    <!-- <button @click="$emit('close')">OK</button> -->
     <button @click="clickChild">OK</button>
   </div>
 </template>
