@@ -30,9 +30,9 @@ const router = createRouter({
       component: () => import('../views/vue-to-print/print-demo.vue')
     },
     {
-      path: '/slot',
-      name: 'slot',
-      component: () => import('../views/Slot-main-demo.vue')
+      path: '/main-child',
+      name: 'main-child',
+      component: () => import('../views/main-child/Main-demo.vue')
     }
   ]
 })
