@@ -17,7 +17,9 @@ import { defineEmits } from 'vue'
 const emit = defineEmits(['clickChild'])
 const clickChild = () => {
   let param = {
-    content: 'child-content'
+    title: 'child-title',
+    content: 'child-content',
+    str: 'This is a child string!'
   }
   //传递给父组件
   emit('clickChild', param)

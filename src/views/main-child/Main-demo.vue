@@ -5,14 +5,19 @@
     </template>
   </Child>
   <div class="content">This is main content!</div>
-  <div>Content from child: {{ result }}</div>
+  <div>String from child: {{ resultStr }}</div>
+  <div>Object from child: {{ resultObj }}</div>
 </template>
 <script setup>
 import Child from './Child-demo.vue'
 import { ref } from 'vue'
-const result = ref('')
+import { reactive } from 'vue'
+const resultStr = ref('')
+const resultObj = reactive({})
 const clickEven = (val) => {
-  result.value = val.content
+  resultStr.value = val.str
+  resultObj.title = val.title
+  resultObj.content = val.content
 }
 </script>
 <style scoped>
