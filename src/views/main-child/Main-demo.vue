@@ -1,5 +1,6 @@
 <template>
   <Child msg="A msg from Main component!" @clickChild="clickEven">
+    <!-- The # syntax is a shorthand for v-slot. -->
     <template #header1>
       <div class="header">Main header!</div>
     </template>
